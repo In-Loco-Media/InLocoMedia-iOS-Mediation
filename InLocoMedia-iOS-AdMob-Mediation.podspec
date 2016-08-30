@@ -9,14 +9,14 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "http://www.inlocomedia.com"
-  s.license      = "Copyright"
+  s.license      = "LICENSE"
   s.author       = { "Ubee Desenvolvimento de Software S/A." => "hi@inlocomedia.com" }
   s.documentation_url = "https://github.com/in-loco-media/inlocomedia-ios-sdk/wiki"
 
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/In-Loco-Media/InLocoMedia-iOS-Mediation", :tag => "2.1.0" }
+  s.source       = { :git => "https://github.com/In-Loco-Media/InLocoMedia-iOS-Mediation.git", :tag => "2.1.0" }
   s.vendored_frameworks = 'AdMob/libInLocoMediaAdMobAdapters.a'
-  s.source_files = 'AdMob/*.h'
+  s.source_files = 'AdMob/*'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
   s.requires_arc = true
   
