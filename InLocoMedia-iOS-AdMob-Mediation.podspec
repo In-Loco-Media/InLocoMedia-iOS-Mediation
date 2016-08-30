@@ -15,9 +15,10 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/In-Loco-Media/InLocoMedia-iOS-Mediation.git", :tag => "2.1.0" }
-  s.vendored_frameworks = 'AdMob/libInLocoMediaAdMobAdapters.a'
+  s.vendored_libraries = 'AdMob/libInLocoMediaAdMobAdapters.a'
   s.source_files = 'AdMob/*'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
   s.requires_arc = true
-  
+  s.dependency 'InLocoMedia-Ads-SDK', '~> 2.1.1'  
+
 end
