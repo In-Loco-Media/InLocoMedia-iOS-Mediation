@@ -19,6 +19,10 @@ Pod::Spec.new do |s|
   s.source_files = 'AdMob/*'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
   s.requires_arc = true
-  s.dependency 'InLocoMedia-Ads-SDK', '~> 2.1.1'  
+  s.dependency 'InLocoMedia-Ads-SDK', '~> 2.1.1'
+
+  s.pod_target_xcconfig = {
+        'OTHER_LDFLAGS'   => '$(inherited) -undefined dynamic_lookup'
+    }
 
 end
