@@ -1,3 +1,5 @@
+
+
 Pod::Spec.new do |s|
  
   s.name         = "InLocoMedia-iOS-AdMob-Mediation"
@@ -17,12 +19,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/In-Loco-Media/InLocoMedia-iOS-Mediation.git", :tag => "2.1.0" }
   s.vendored_libraries = 'AdMob/libInLocoMediaAdMobAdapters.a'
   s.source_files = 'AdMob/*'
-  s.xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
   s.requires_arc = true
-  s.dependency 'InLocoMedia-Ads-SDK', '~> 2.1.1'
-
-  s.pod_target_xcconfig = {
-        'OTHER_LDFLAGS'   => '$(inherited) -undefined dynamic_lookup'
-    }
+  s.dependency  'InLocoMedia-Ads-SDK'
+  s.xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
 
 end
