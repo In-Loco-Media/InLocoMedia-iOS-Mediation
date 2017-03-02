@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ILMGADUtils.h"
+#import <GoogleMobileAds/GoogleMobileAds.h>
 
 @interface ILMGADInterstitialAdapter : NSObject <GADCustomEventInterstitial>
 
