@@ -20,7 +20,6 @@ Pod::Spec.new do |s|
   s.vendored_libraries = 'AdMob/libInLocoMediaAdMobAdapters.a'
   s.source_files = 'AdMob/*'
   s.requires_arc = true
-  s.dependency 'Google-Mobile-Ads-SDK'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
 
 end
