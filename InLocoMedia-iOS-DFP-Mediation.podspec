@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.vendored_libraries = 'DFP/libInLocoMediaDFPAdapters.a'
   s.source_files = 'DFP/*'
   s.requires_arc = true
-  s.dependency 'InLocoMedia-Ads-SDK'
+  s.dependency 'InLocoMedia-iOS-SDK'
   s.dependency 'Google-Mobile-Ads-SDK'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
 
