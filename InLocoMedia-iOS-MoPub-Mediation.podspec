@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
  
-  s.name         = "InLocoMedia-iOS-DFP-Mediation"
+  s.name         = "InLocoMedia-iOS-MoPub-Mediation"
   s.version      = "3.1.0"
   s.summary      = "Monetize your mobile apps with In Loco Media, the most profitable Ad Network in Latin America."
 
@@ -17,11 +17,11 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/In-Loco-Media/InLocoMedia-iOS-Mediation.git", :tag => "3.1.0" }
-  s.vendored_libraries = 'DFP/libInLocoMediaDFPAdapters.a'
-  s.source_files = 'DFP/*'
+  s.vendored_libraries = 'MoPub/libInLocoMediaMoPubAdapters.a'
+  s.source_files = 'MoPub/*'
   s.requires_arc = true
   s.dependency 'InLocoMedia-iOS-SDK'
-  s.dependency 'Google-Mobile-Ads-SDK'
+  s.dependency 'mopub-ios-sdk'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
 
 end
