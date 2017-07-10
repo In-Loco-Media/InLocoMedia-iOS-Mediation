@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
  
   s.name         = "InLocoMedia-iOS-AdMob-Mediation"
-  s.version      = "3.1.1"
+  s.version      = "3.1.2"
   s.summary      = "Monetize your mobile apps with In Loco Media, the most profitable Ad Network in Latin America."
 
   s.description  = <<-DESC
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.documentation_url = "https://github.com/in-loco-media/inlocomedia-ios-sdk/wiki"
 
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/In-Loco-Media/InLocoMedia-iOS-Mediation.git", :tag => "3.1.1" }
+  s.source       = { :git => "https://github.com/In-Loco-Media/InLocoMedia-iOS-Mediation.git", :tag => "3.1.2" }
   s.vendored_libraries = 'AdMob/libInLocoMediaAdMobAdapters.a'
   s.source_files = 'AdMob/*.h'
   s.requires_arc = true
