@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.documentation_url = "https://github.com/in-loco-media/inlocomedia-ios-sdk/wiki"
 
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/In-Loco-Media/InLocoMedia-iOS-Mediation.git", :tag => "3.1.2" }
+  s.source       = { :git => "https://github.com/In-Loco-Media/InLocoMedia-iOS-Mediation.git", :tag => "3.1.3" }
   s.vendored_libraries = 'MoPub/libInLocoMediaMoPubAdapters.a'
   s.source_files = 'MoPub/*.h'
   s.requires_arc = true
